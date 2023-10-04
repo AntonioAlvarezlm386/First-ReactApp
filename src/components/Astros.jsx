@@ -27,22 +27,22 @@ const Astros = () => {
             .catch(err => console.error(err))
     }
 
-    console.log(astros);
-
-    return (<div className="main--container">
-        <h2>Astros</h2>
-        <div className="secondary--container">
-            {
-                astros.length !== 0
-                    ?
-                    astros.map((astro, index) => (
-                        <Astro key={index} {...astro} />
-                    )) :
-                    <CircularIndeterminate />
-            }
+    return (
+        <div className="contenedor">
+            <div>
+                <h2>Astros</h2>
+            </div>
+            <div className="cards--container">
+                {
+                    astros.length !== 0
+                        ?
+                        astros.map((astro, index) => (
+                            <Astro key={index} {...astro} />
+                        )) :
+                        <CircularIndeterminate />
+                }
+            </div>
         </div>
-
-    </div>
     )
 }
 

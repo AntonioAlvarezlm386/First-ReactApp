@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar.jsx'
 import Main from './components/Main.jsx'
+import About from './components/About.jsx'
 import { Route, Routes } from 'react-router-dom'
 import Astros from './components/Astros.jsx'
 import ResponsiveAppBar from './components/AppBar.jsx'
@@ -12,7 +13,7 @@ function App() {
   const linksData = [
     { name: 'Home', href: '/' },
     { name: 'Astros', href: '/astros' },
-    { name: 'About', href: '#' },
+    { name: 'About', href: '/about' },
   ]
 
 
@@ -29,6 +30,11 @@ function App() {
         <Route
           path='/astros'
           element={<Astros/>}
+        />
+
+        <Route
+          path='/about'
+          element={<About/>}
         />
       </Routes>
     </>

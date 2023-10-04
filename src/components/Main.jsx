@@ -5,7 +5,8 @@ import './Main.css'
 const Main = () => (
     <>
         <h1>Hola mundo!</h1>
-        <h2>Creando mi primera app en REACT</h2>
+        <h2>Esta es mi primera app en REACT</h2>
+        <img src="src\assets\undraw.svg" alt="" />
     </>
 )
 
