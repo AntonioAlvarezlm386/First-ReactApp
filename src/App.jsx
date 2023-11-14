@@ -3,13 +3,13 @@ import Main from './components/Main.jsx'
 import About from './components/About.jsx'
 import { Route, Routes } from 'react-router-dom'
 import Astros from './components/Astros.jsx'
-import ResponsiveAppBar from './components/AppBar.jsx'
 import './App.css'
 
 
 
 function App() {
   //cambiar las links a una constante de objeto
+  {/**Estos seran props que se le mandaran al navbar */}
   const linksData = [
     { name: 'Home', href: '/' },
     { name: 'Astros', href: '/astros' },

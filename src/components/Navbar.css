@@ -6,13 +6,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 30px;
     background-color: #0E2954;
     overflow: hidden;
     z-index: 10;
+    padding: 0;
 }
 
 .navbar--title {
+    margin: 0 20px;
     font-size: 0.8rem;
     letter-spacing: .1rem;
 }
@@ -22,7 +23,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0 6vw;
+    padding: 0 20px;
 }
 
 .navbar--link {
